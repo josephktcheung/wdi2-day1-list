@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>Lists</title>
+    <link rel="stylesheet" href="/css/main.css" media="all">
+  </head>
+  <body>
+    <header>
+      <h1>Lists</h1>
+    </header>
+    <main role="main">
+      <section id="elements">
+        <header>
+          <h2>List elements</h2>
+        </header>
+        <dl class="elements">
+          <dt>&lt;div&gt;</dt>
+          <dd>
+            <div class="div-style-example">
+              This section can't be grouped into any of the standard elements, but we still want to add style to it. When no other element is suitable, the &lt;div&gt; element is used as an element of last resort. Otherwise, it leads to poor accessibility for readers.
+            </div>
+          </dd>
+          <dt>&lt;dl&gt;</dt>
+          <dd>gives the definition term or basis on what is about to be defined</dd>
+          <dt> &lt;dt&gt; </dt> 
+          <dd>is a defintion list term and can be used in question format.</dd>
+          <dt> &lt;dd&gt;</dt>
+          <dd>is a definition list definition and is used as an answer or explanation to the &lt;dt&gt; question.</dd>
+          <dt>&lt;ol&gt;</dt>
+          <dd> A sequenced list; the sequence of the items matters</dd>
+          <dt>&lt;ul&gt;</dt>
+          <dd> A collection of items for which the order is meaningless.</dd>
+          <dt>&lt;li&gt;</dt>
+          <dd>Used to represent a single list item in an ordered list, unordered list, or menu.</dd>
+        </dl>
+      </section>
+      <section id="attributes">
+        <h2>List attributes</h2>
+        <dl class="attributes">
+          <dt>Reversed</dt>
+          <dd>The reversed attribute is a boolean attribute. If present, it indicates that the list is a descending list (..., 3, 2, 1).</dd>
+          <dt>Start</dt>
+          <dd>The start attribute specifies the start value of the first list item in an ordered list.</dd>
+          <dd>
+            Attribute Value:
+            <ul>
+              <li>number: Specifies the start value of the first list item in the ordered list</li>
+            </ul>
+          </dd>
+          <dt>Type</dt>
+          <dd>
+            The type attribute specifies the kind of marker to use in the unordered list.
+          </dd>
+          <dd>
+            Attribute Value:
+            <ul>
+              <li>disc</li>
+              <li>circle</li>
+              <li>square</li>
+            </ul>
+          </dd>
+          <dt>Value</dt>
+          <dd>The value attribute sets the value of a list item. The following list items will increment from that number.</dd>
+          <dd>The value must be a number and can only be used in ordered lists (&lt;ol&gt;).</dd>
+          <dd>
+            Attribute value:
+            <ul>
+              <li>number: specifies the value of the list item</li>
+            </ul>
+          </dd>
+        </dl>
+        <section id="attributes-examples">
+          <h3>Attributes examples</h3>
+          <p>Reversed list</p>
+          <ol reversed id="reversed-list">
+            <li>item 1</li>
+            <li>item 2</li>
+            <li>item 3</li>
+          </ol>
+          <p>List starts from 4</p>
+          <ol start="4" id="start">
+            <li>item 1</li>
+            <li>item 2</li>
+            <li>item 3</li>
+          </ol>
+          <p>Unorder list type: disc</p>
+          <ul type="disc" id="list-type-disc">
+            <li>item 1</li>
+            <li>item 2</li>
+            <li>item 3</li>
+          </ul>
+          <p>Unorder list type: circle</p>
+          <ul type="circle" id="list-type-circle">
+            <li>item 1</li>
+            <li>item 2</li>
+            <li>item 3</li>
+          </ul>
+          <p>Unorder list type: square</p>
+          <ul type="square" id="list-type-square">
+            <li>item 1</li>
+            <li>item 2</li>
+            <li>item 3</li>
+          </ul>
+          <p>List item value</p>
+          <ol id="list-item-value">
+            <li value="3">item 1</li>
+            <li value="5">item 2</li>
+            <li>item 3</li>
+          </ol>
+        </section>
+      </section>
+      <section id="list-css">
+        <h2>List css properties</h2>
+        <dl class="css">
+          <dt>list-style: [type] [image] [position]</dt>
+          <dd>Ex: list-style:circle inside</dd>
+          <dt>list-style-type</dt>
+          <dd>Ex: list-style-type:circle</dd>
+          <dt>list-style-position -  specifies if the list-item markers should appear inside or outside the content flow.</dt>
+          <dd>Ex: list-style-position:inside</dd>
+          <dt>list-style-image</dt>
+          <dd>Ex: list-style-image:star.gif</dd>
+          <dt>Counter Increment</dt>
+          <dd>The counter-increment CSS property is used to increase the value of CSS Counters by a given value. 
+          The counter's value can be reset using the counter-reset CSS property.</dd>
+        </dl>
+        <section id="css-examples">
+          <h3>List css examples</h3>
+          <ul class="inside">
+            <li>Inside Position</li>
+            <li>Tea</li>
+            <li>Coca Cola</li>
+          </ul>
+          
+          <ul class="outside">
+            <li>Outside Position</li>
+            <li>Tea</li>
+            <li>Coca Cola</li>
+          </ul>
+          
+          <ul class="circle">
+            <li>Circle type</li>
+            <li>Tea</li>
+            <li>Coca Cola</li>
+          </ul>
+          
+          <ul class="disc">
+            <li>Disc type</li>
+            <li>Tea</li>
+            <li>Coca Cola</li>
+          </ul>
+          
+          <ul class="square">
+            <li>Square type</li>
+            <li>Tea</li>
+            <li>Coca Cola</li>
+          </ul>
+          
+          <ul class="armenian">
+            <li>Armenian type</li>
+            <li>Tea</li>
+            <li>Coca Cola</li>
+          </ul>
+          
+          <ol class="cjk-ideographic">
+            <li>cjk-ideographic</li>
+            <li>Tea</li>
+            <li>Coca Cola</li>
+          </ol>
+          
+          <ol class="decimal">
+            <li>Decimal type</li>
+            <li>Tea</li>
+            <li>Coca Cola</li>
+          </ol>
+     
+          <ol class="leading-zero">
+            <li>Decimal-leading-zero type</li>
+            <li>Tea</li>
+            <li>Coca Cola</li>
+          </ol>
+     
+          <ol class="georgian">
+            <li>Georgian type</li>
+            <li>Tea</li>
+            <li>Coca Cola</li>
+          </ol>
+          
+          <ol class="hebrew">
+            <li>Hebrew type</li>
+            <li>Tea</li>
+            <li>Coca Cola</li>
+          </ol>
+          
+          <ol class="lower-alpha">
+            <li>Lower-alpha type</li>
+            <li>Tea</li>
+            <li>Coca Cola</li>
+          </ol>
+          
+          <ol class="lower-greek">
+            <li>Lower-greek type</li>
+            <li>Tea</li>
+            <li>Coca Cola</li>
+          </ol>
+
+          <ol class="lower-latin">
+            <li>Lower-latin type</li>
+            <li>Tea</li>
+            <li>Coca Cola</li>
+          </ol>
+          
+          <ol class="lower-roman">
+            <li>Lower-roman type</li>
+            <li>Tea</li>
+            <li>Coca Cola</li>
+          </ol>
+
+          <ol class="upper-alpha">
+            <li>Upper-alpha type</li>
+            <li>Tea</li>
+            <li>Coca Cola</li>
+          </ol>
+
+          <ol class="upper-latin">
+            <li>Upper-latin type</li>
+            <li>Tea</li>
+            <li>Coca Cola</li>
+          </ol>
+          
+          <ol class="upper-roman">
+            <li>Upper-roman type</li>
+            <li>Tea</li>
+            <li>Coca Cola</li>
+          </ol>
+          
+          <ol class="none">
+            <li>None type</li>
+            <li>Tea</li>
+            <li>Coca Cola</li>
+          </ol>
+          
+          <ol class="inherit">
+            <li>inherit type</li>
+            <li>Tea</li>
+            <li>Coca Cola</li>
+          </ol>
+
+          <div class="increment">
+            <ol>
+              <li>item</li>          <!-- 1     -->
+              <li>item               <!-- 2     -->
+                <ol>
+                  <li>item</li>      <!-- 2.1   -->
+                  <li>item</li>      <!-- 2.2   -->
+                  <li>item           <!-- 2.3   -->
+                    <ol>
+                      <li>item</li>  <!-- 2.3.1 -->
+                      <li>item</li>  <!-- 2.3.2 -->
+                    </ol>
+                    <ol>
+                      <li>item</li>  <!-- 2.3.1 -->
+                      <li>item</li>  <!-- 2.3.2 -->
+                      <li>item</li>  <!-- 2.3.3 -->
+                    </ol>
+                  </li>
+                  <li>item</li>      <!-- 2.4   -->
+                </ol>
+              </li>
+              <li>item</li>          <!-- 3     -->
+              <li>item</li>          <!-- 4     -->
+            </ol>
+            <ol>
+              <li>item</li>          <!-- 1     -->
+              <li>item</li>          <!-- 2     -->
+            </ol>                   
+          </div>
+        </section>
+      </section>
+    </main>
+  </body>
+</html>
